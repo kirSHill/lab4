@@ -55,7 +55,6 @@ public class Story {
 
         System.out.print(Sun.getName()); Sun.hideHorizon();
 
-        House House = new House("Дом", Material.WOOD,false);
         House.Room Room = new House.Room();
 
         System.out.print(Korotishka.getName()); Room.enterRoom(Znaika);
