@@ -5,7 +5,7 @@ public enum Material {
         HYDROGEN("водород"),
         WOOD("деревянный");
 
-        public final String name;
+        private final String name;
 
         Material(String s) {
                 this.name = s;
