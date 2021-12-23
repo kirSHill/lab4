@@ -6,8 +6,8 @@ import interfaces.Location;
 
 public abstract class Human implements Eating, Interesting, Location, interfaces.Talk {
 
-    public String name;
-    public Interest interest;
+    public final String name;
+    private Interest interest;
 
     public Human(String name, Interest PowerOfInterest) {
         this.name = name;
