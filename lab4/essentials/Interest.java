@@ -7,7 +7,7 @@ public enum Interest {
     ENGAGED ("интересовались"),
     FASCINATED(" не выдержал,");
 
-    public final String name;
+    private final String name;
 
     Interest(String s) {
         this.name = s;
