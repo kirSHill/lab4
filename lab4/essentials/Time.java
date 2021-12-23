@@ -5,7 +5,7 @@ public enum Time {
     DARKNESS ("полная темнота"),
     LIGHTLY (" ещё слишком светло");
 
-    public final String name;
+    private final String name;
 
     Time(String s) {
         this.name = s;
