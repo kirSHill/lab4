@@ -7,7 +7,11 @@ public class Story {
     private static String Secret = "Лунный камень";
 
     public static void main(String[] args) {
-
+        
+        if (Secret == null) {
+            throw new NoSecretException("Как история может быть без секрета?");
+        }
+        
         System.out.println("ДЕНЬ ПЕРВЫЙ");
 
         Znaika Znaika = new Znaika("Знайка", Interest.UNINTERESTED);
@@ -31,16 +35,7 @@ public class Story {
 
         Toropizhka.setPowerOfInterest(Interest.FASCINATED);
         System.out.println(Toropizhka.getName() + Toropizhka.getPowerOfInterest() + Toropizhka.goTo(Znaika) + Toropizhka.beat(Znaika) + Znaika.tellSecret());
-
-        try {
-            if (Secret == null) {
-                throw new NoSecretException("Как история может быть без секрета?");
-            }
-        }
-        catch (NoSecretException e) {
-            System.err.println("У Знайки должен быть секрет!");
-        }
-
+        
         Korotishka.setPowerOfInterest(Interest.CURIOSITY);
         System.out.println(Korotishka.getName() + " узнали секрет заранее, но их " + Korotishka.getPowerOfInterest() + " лишь увеличивалось");
 
