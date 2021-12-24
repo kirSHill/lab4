@@ -12,7 +12,7 @@ public class House extends Thing{
     }
     public class Room {
         public void enterRoom(Human h) {
-            System.out.println(" вошли в комнату " + h.name);
+            System.out.println(" вошли в комнату " + h.getName());
         }
     }
 
